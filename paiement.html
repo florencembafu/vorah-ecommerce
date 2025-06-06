@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> paiement.html"</title>
+    <link rel="stylesheet"href="style.css">
+    <link rel="strylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <section class="menu-paiement">
+        <button onclick="afficherSection('paiement')">Paiement</button>
+        <button onclick="afficherSection('infos')">Iformations client</button>
+        <button onclick="window.location.href='renseignements.html'">Renseignements</button>
+        <button onclick="window.location.href='devis.html'">Demande de devis</button>
+    </section>
+    <section id="paiement" class="section-cachée">
+        <h3>Modalités de paiements via</h3>
+        <p>Nous acceptons les paiements via<strong> M-pesa</strong>.</p>
+    <ul>
+    <li>1.sélectionnez vos produits</li>
+    <li>2.Cliquez sur "Valider le panier"</li>
+    <li>3.Transférez le montant au numéro:<strong>+243000000000</strong></li>
+    <li>4.Un reçu vous sera envoyé par e-mail</li>
+    </ul>
+    </section>
+    <section id="infos" class="section-cachée">
+        <h3>Informations personnelles</h3>
+        <form id="form-client">
+            <input type="text" name="nom"placeholder="Nom"required>
+            <input type="text" name="postnom"placeholder="postnom"required>
+            <input type="text" name="prenom"placeholder="prénom" required>
+            <input type="text"name="adresse"placeholder="Adresse complète"required>
+
+            <select name="sexe"required>
+                <option value="">--sexe--</option>
+                <option value="F">Féminin</option>
+                <option value="M">Masculin</option>
+            </select>
+            <input type="email" name="email" placeholder="Adresse e-mail"required>
+            <input type="tel"  name="numero" placeholder="Téléphone"required>
+            <textarea name="expedition"placeholder="Adresse d'expédition exacte"required>
+                <button type="submit">Envoyer</button>
+            </from>
+        </Section>
