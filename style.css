@@ -16,6 +16,8 @@ flex-wrap: wrap;
 justify-content: center;
 gap: 20px;
 padding: 20px;
+width: 180PX;
+margin: 15PX;
 }
 .product-card{
     background-color: white;
@@ -28,7 +30,14 @@ padding: 20px;
 }
 .product-card img {
     width: 100%;
+    height: auto;
     border-radius: 5px;
+}
+.produits-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 .product-card button{
     background-color: orange;
@@ -84,36 +93,6 @@ z-index: 1000;
     font-size: 20px;
     margin-bottom: 3px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .hero{
 display:flex ;
 justify-content: space-between;
@@ -139,14 +118,14 @@ border-radius: 10px;
     color: #555;
 }
 .hero-image img{
-    width: 200px;
+    width: 300px;
 }
 .categories{
     padding: 20px;
 }
 .category-gird{
     display: flex;
-    gap: 10px;
+    gap: 5px;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -163,19 +142,20 @@ border-radius: 10px;
     background-color: #ffe0b3;
 }
 .products {
-    padding: 20px;
+    padding: 200px;
 }
 .products h2 {
     text-align: center;
+    
 }
 .product-card {
     background-color: white;
     border: 1px solid #ddd;
     border-radius:10px;
-    width: 90px;
+    width: 200px;
     text-align:center ;
-    padding: 20px;
-    margin: 10px auto;
+    padding: 50px;
+    margin: 50px auto;
 }
 
 
@@ -190,7 +170,7 @@ border-radius: 10px;
 }
 .categories-section{
     display: flex;
-    padding: 20px;
+    padding: 200px;
 }
 .sidebar {
     width: 200px;
