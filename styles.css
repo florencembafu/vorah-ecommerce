@@ -1,0 +1,221 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma,Geneva,Verda, sans-serif;
+    font-style:normal;
+    background-color:#f5f5f5 ;
+    color: #f1c16f;
+}
+.navbar{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    top: 0;
+    align-items: center;
+    position:sticky;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(105, 93, 93, 0.1);
+}
+.logo{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #c94b4b;
+    font-family: 'segoe UI', sans-serif;
+    font-style:italic;
+}
+nav ul {
+    list-style: none;;
+    display: flex;
+    gap: 40px;
+    margin: 20px;
+    padding: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    list-style: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3 ease;
+}
+nav ul li a:hover{
+    color: #ca7e4b;
+    border-bottom: 2px solid #f4b400;
+}
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(50, 48, 46);
+    padding: 10px;
+    margin: 1px;
+    border-radius: 30px;
+
+}
+
+
+.banner-text h1 {
+    max-width: 50%;
+}
+.banner-text p{
+    font-size: 18px;
+}
+.banner-circle{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow:hidden;
+    border: 6px solid #ab9456;
+    box-shadow: 0 8px 20px rgba(0, 0,0, 0.2);
+}
+.banner-circle img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.section-title{
+    font-size: 24px;
+    margin: 20px;
+    font-weight: bold;
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 20px;
+    padding: 30px;
+    justify-items: center;
+    
+    
+}
+.product-card{
+    width: 200px;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+.product-card:hover{
+    transform: translateY(-5px);
+}
+.product-card img{
+    width: 100%;
+    height: auto;
+    border-radius:5px;
+}
+.product-name{
+    margin: 10px 0 5px;
+    font-weight: 600;
+}
+.product-price{
+    color: #1edfe9;
+    font-weight: bold;
+}
+
+.promo{
+    color: rgb(218, 119, 119);
+    font-weight: bold;
+}
+.ajouterPanier{
+    margin-top: 10px;
+    background-color: #386881;
+    color:rgb(186, 106, 106);
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.ajouterPanier:hover{
+    background-color: #913333;
+}
+.nav-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;flex-wrap: wrap;
+}
+.nav-links{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+.search-bar{
+    display: flex;
+    gap: 10px;
+    padding: 30px;
+}
+.search-bar input{
+    padding: 7px 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 14px;
+    width: 220px;
+}
+.search-bar button{
+    padding: 7px 15px;
+    border: none;
+    background-color: #97d7d0;
+    color: white;
+    box-sizing: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.search-bar button:hover{
+    background-color: #c79300;
+}
+.menu-icon{
+    display: flex;
+    font-size: 26px;
+    cursor: pointer;
+    color: white;
+}
+.search-mobile{
+    display: none;
+}
+
+@media (max-width: 768px){
+    .menu-icon{
+        display:block;
+    }
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        background-color: #222;
+        position: abasolute;
+        top:60px;
+        left:0;
+        width: 100%;
+        padding: 20px 0;
+    }
+    #menu-toggle:checked +.menu-icon +.nav-links{
+        display: flex;
+    }
+    .search-bar{
+        display: none;
+    }
+    .search-mobile{
+        display: block;
+        padding: 10px 20px;
+    }
+    .search-mobile input{
+        width: 80%;
+        padding: 8px;
+        border-radius: 1px solid #ccc;
+    }
+    .search-mobile button {
+        margin-top:5px ;
+        padding: 6px 10px;
+        background-color: #97d7d0;
+        color:white;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+}
+#menu-toggle {
+    display: none;
+}
