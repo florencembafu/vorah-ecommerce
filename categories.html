@@ -4,27 +4,225 @@
         <meta  charset="UTF-8">
         <meta name="viewport"content="width=device-width, initial-scale=1.0">
         <title>vorah-catégories</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    
-        <aside class="sidebar">
-            <h2>catégories</h3>
-<ul> 
-    <li onclick="showcategory('sac')">sac</li>
-    <li onclick="showcategory('offres ')">Offre spéciales</li>
-    <li onclick="showcategory('bijoux')">Bijoux et autres</li>
-    <li onclick="showcategory('vetements')">Vetements & Accessoires</li>
-    <li onclick="showcategory('cheveveux')">Accessoires cheveveux</li>
-    <li onclick="showcategory('beaute')">Produits de beauté</li>
-    <li onclick="showcategory('chaussures')">chaussures</li>
-</ul>
+    </head>
+    <body>
+        <nav class="navbar">
+        <div class="logo">vorah</div>
+            <ul class="nav-links">
+         <li><a href="index.html">Accueil</a></li>
+            <li><a href="categories.html">catégories</a></li>
+                <li><a href="panier.html">panier</a></li>
+                <li><a href="moncompte.html"> Moncompte</a></li>
+                <li class="search-mobile">
+        </ul>
+        </nav>
+        
+        
+        <div class="categories-page">
+            <aside class="categories-menu">
+            <h3>catégories</h3>
+            <ul>    
+                <li onclick="filterProducts('sac')">sac</li>
+                <li onclick="filterProducts('offres ')">Offre spéciale</li>
+                <li onclick="filterProducts('bijoux')">Bijoux et autres</li>
+                <li onclick="filterProducts('vetements')">Vetements & Accessoires</li>
+                <li onclick="filterProducts('cheveveux')">Accessoires cheveveux</li>
+                <li onclick="filterProduct('beaute')">Produits de beauté</li>
+                <li onclick="filterProducts('chaussures')">chaussures</li>
+            </ul>
         </aside>
-        <div class="category-products" id="productDisplay">
-            <p>sélectionnez une catégorie pour les produits.</p>
-        </div>
-    </section>
 
-    
-    <script>
+
+    <main class="product-container" >
+        <h4>Recommandations </h4>
+    <div class="product-grid" id="recommandations">
+<div class="product-card sac">
+    <img src="IMG_E3032 (2).JPG"alt="sac">
+    <h4>sac</h4>
+    <p>15$</p>
+    <button onclick="ajouterPanier()"> Ajouter au panier</button>
+</div>
+<div class="product-card bijoux">
+   <img src="IMG_E3032 (2).JPG"alt="Bijoux">
+    <h4>sac</h4>
+    <p>15$</p>
+    <button onclick="ajouterPanier()"> Ajouter au panier</button>
+</div> 
+<div class="product-card vetements & Accessoires">
+   <img src="IMG_E3032 (2).JPG"alt="Vetements&Accessoires">
+    <h4>sac</h4>
+    <p>15$</p>
+    <button onclick="ajouterPanier()"> Ajouter au panier</button>
+    </div>
+    <div class="product-card Accessoires cheveux">
+   <img src="IMG_E3032 (2).JPG"alt="chouchou">
+    <h4>sac</h4>
+    <p>15$</p>
+    <button onclick="ajouterPanier()"> Ajouter au panier</button>
+    </div>
+    <div class="product-card produits de beaute">
+   <img src="IMG_E3032 (2).JPG"alt="crayon">
+    <h4>sac</h4>
+    <p>15$</p>
+    <button onclick="ajouterPanier()"> Ajouter au panier</button>
+    </div>
+    <div class="product-card chaussures">
+   <img src="IMG_E3032 (2).JPG"alt="chaussures">
+    <h4>sac</h4>
+    <p>15$</p>
+    <button onclick="ajouterPanier()"> Ajouter au panier</button>
+    </div>
+     <div class="product-card chaussures">
+   <img src="IMG_E3032 (2).JPG"alt="chaussures">
+    <h4>sac</h4>
+    <p>15$</p>
+    <button onclick="ajouterPanier()"> Ajouter au panier</button>
+    </div>
+     <div class="product-card chaussures">
+   <img src="IMG_E3032 (2).JPG"alt="chaussures">
+    <h4>sac</h4>
+    <p>15$</p>
+    <button onclick="ajouterPanier()"> Ajouter au panier</button>
+    </div>
+     <div class="product-card chaussures">
+   <img src="IMG_E3032 (2).JPG"alt="chaussures">
+    <h4>sac</h4>
+    <p>15$</p>
+    <button onclick="ajouterPanier()"> Ajouter au panier</button>
+    </div>
+     <div class="product-card chaussures">
+   <img src="IMG_E3032 (2).JPG"alt="chaussures">
+    <h4>sac</h4>
+    <p>15$</p>
+    <button onclick="ajouterPanier()"> Ajouter au panier</button>
+    </div>
+     <div class="product-card chaussures">
+   <img src="IMG_E3032 (2).JPG"alt="chaussures">
+    <h4>sac</h4>
+    <p>15$</p>
+    <button onclick="ajouterPanier()"> Ajouter au panier</button>
+    </div>
+     <div class="product-card chaussures">
+   <img src="IMG_E3032 (2).JPG"alt="chaussures">
+    <h4>sac</h4>
+    <p>15$</p>
+    <button onclick="ajouterPanier()"> Ajouter au panier</button>
+    </div>
+     <div class="product-card chaussures">
+   <img src="IMG_E3032 (2).JPG"alt="chaussures">
+    <h4>sac</h4>
+    <p>15$</p>
+    <button onclick="ajouterPanier()"> Ajouter au panier</button>
+    </div>
+     <div class="product-card chaussures">
+   <img src="IMG_E3032 (2).JPG"alt="chaussures">
+    <h4>sac</h4>
+    <p>15$</p>
+    <button onclick="ajouterPanier()"> Ajouter au panier</button>
+    </div>
+     <div class="product-card chaussures">
+   <img src="IMG_E3032 (2).JPG"alt="chaussures">
+    <h4>sac</h4>
+    <p>15$</p>
+    <button onclick="ajouterPanier()"> Ajouter au panier</button>
+    </div>
+    <div class="product-card chaussures">
+   <img src="IMG_E3032 (2).JPG"alt="chaussures">
+    <h4>sac</h4>
+    <p>15$</p>
+    <button onclick="ajouterPanier()"> Ajouter au panier</button>
+    </div>
+     <div class="product-card chaussures">
+   <img src="IMG_E3032 (2).JPG"alt="chaussures">
+    <h4>sac</h4>
+    <p>15$</p>
+    <button onclick="ajouterPanier()"> Ajouter au panier</button>
+    </div>
+     <div class="product-card chaussures">
+   <img src="IMG_E3032 (2).JPG"alt="chaussures">
+    <h4>sac</h4>
+    <p>15$</p>
+    <button onclick="ajouterPanier()"> Ajouter au panier</button>
+    </div>
+     <div class="product-card chaussures">
+   <img src="IMG_E3032 (2).JPG"alt="chaussures">
+    <h4>sac</h4>
+    <p>15$</p>
+    <button onclick="ajouterPanier()"> Ajouter au panier</button>
+    </div>
+     <div class="product-card chaussures">
+   <img src="IMG_E3032 (2).JPG"alt="chaussures">
+    <h4>sac</h4>
+    <p>15$</p>
+    <button onclick="ajouterPanier()"> Ajouter au panier</button>
+    </div>
+     <div class="product-card chaussures">
+   <img src="IMG_E3032 (2).JPG"alt="chaussures">
+    <h4>sac</h4>
+    <p>15$</p>
+    <button onclick="ajouterPanier()"> Ajouter au panier</button>
+    </div>
+     <div class="product-card chaussures">
+   <img src="IMG_E3032 (2).JPG"alt="chaussures">
+    <h4>sac</h4>
+    <p>15$</p>
+    <button onclick="ajouterPanier()"> Ajouter au panier</button>
+    </div>
+     <div class="product-card chaussures">
+   <img src="IMG_E3032 (2).JPG"alt="chaussures">
+    <h4>sac</h4>
+    <p>15$</p>
+    <button onclick="ajouterPanier()"> Ajouter au panier</button>
+    </div>
+     <div class="product-card chaussures">
+   <img src="IMG_E3032 (2).JPG"alt="chaussures">
+    <h4>sac</h4>
+    <p>15$</p>
+    <button onclick="ajouterPanier()"> Ajouter au panier</button>
+    </div>
+     <div class="product-card chaussures">
+   <img src="IMG_E3032 (2).JPG"alt="chaussures">
+    <h4>sac</h4>
+    <p>15$</p>
+    <button onclick="ajouterPanier()"> Ajouter au panier</button>
+    </div>
+     <div class="product-card chaussures">
+   <img src="IMG_E3032 (2).JPG"alt="chaussures">
+    <h4>sac</h4>
+    <p>15$</p>
+    <button onclick="ajouterPanier()"> Ajouter au panier</button>
+    </div>
+     <div class="product-card chaussures">
+   <img src="IMG_E3032 (2).JPG"alt="chaussures">
+    <h4>sac</h4>
+    <p>15$</p>
+    <button onclick="ajouterPanier()"> Ajouter au panier</button>
+    </div>
+      <div class="product-card chaussures">
+   <img src="IMG_E3032 (2).JPG"alt="chaussures">
+    <h4>sac</h4>
+    <p>15$</p>
+    <button onclick="ajouterPanier()"> Ajouter au panier</button>
+    </div>
+      <div class="product-card chaussures">
+   <img src="IMG_E3032 (2).JPG"alt="chaussures">
+    <h4>sac</h4>
+    <p>15$</p>
+    <button onclick="ajouterPanier()"> Ajouter au panier</button>
+    </div>
+      <div class="product-card chaussures">
+   <img src="IMG_E3032 (2).JPG"alt="chaussures">
+    <h4>sac</h4>
+    <p>15$</p>
+    <button onclick="ajouterPanier()"> Ajouter au panier</button>
+    </div>
+</section>
+        </main>
+        </div>
+    <script src="js.script.js"></script>
+    </body>
+</html>
         
         

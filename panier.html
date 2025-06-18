@@ -3,20 +3,39 @@
     <head>
         <meta charset="UTF-8">
         <title>Panier-vorah</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awersome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="styles.css">
+        
     </head>
     <body>
+<header>
+    <nav class="navbar">
+    <div class="logo">vorah</div>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="categories.html">catégories</a></li>
+                <li><a href="panier.html">panier</a></li>
+                <li><a href="moncompte.html"> Moncompte</a></li>
+                <li class="search-mobile">
+                    <input type="text"placeholder=" rechercher">
+                    <button>ok</button>
+                </li>
+        </ul>
+    </nav>
+</header>
 
-        <section class="produits-panier">
-            <h2>"Nos produits"</h2>
-            <div class="grille-produits">
-                <div class="produits">
-                    <imag src="robe.jpg"alt="Robe élégante">
-                        <h4>Robe élégante</h4>
-                        <p>prix :25$</p>
-                        <p>Quantité min :1</p>
-                        <button onclick="ajouterAupanier('Robe élégante', 25)">
-                            <i class="fa-solid fa-cart-plus"></i> Ajouter
-                        </button>
-                    </div>
+        <main class="panier-container">
+            <section class="panier-liste" id="panier-items">
+            </section>
+
+            <aside class="panier-resume">
+                <h3>Résumé de la commande</h3>
+                <p>Total :<span id="total">0 fc</span></p>
+                <button onclick="validerCommande()">Valider la commande</button>
+            </aside>
+        </main>
+
+        <script src="js.script.js"></script>
+    </body>
+</html>
