@@ -5,7 +5,6 @@
         <meta name="viewport"content="width=device-width, initial-scale=1.0">
         <title>vorah-catégories</title>
         <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     </head>
     <body>
         <nav class="navbar">
@@ -18,210 +17,239 @@
                 <li class="search-mobile">
         </ul>
         </nav>
-        
-        
-        <div class="categories-page">
-            <aside class="categories-menu">
-            <h3>catégories</h3>
-            <ul>    
-                <li onclick="filterProducts('sac')">sac</li>
-                <li onclick="filterProducts('offres ')">Offre spéciale</li>
-                <li onclick="filterProducts('bijoux')">Bijoux et autres</li>
-                <li onclick="filterProducts('vetements')">Vetements & Accessoires</li>
-                <li onclick="filterProducts('cheveveux')">Accessoires cheveveux</li>
-                <li onclick="filterProduct('beaute')">Produits de beauté</li>
-                <li onclick="filterProducts('chaussures')">chaussures</li>
-            </ul>
+        <header>
+      <h1>Nos catégories</h1>
+        </header>
+       <div class="container" >
+        <aside class="side-menu">
+          <ul>
+            <li><a href="#Sacs">sacs</a></li>
+            <li><a href="#bijoux">Bijoux</a></li>
+            <li><a href="#vetements">Vetements</a></li>
+            <li><a href="#chaussures">chaussures</a></li>
+            <li><a href="#Accessoires">Accessoires</a></li>
+          </ul>
         </aside>
-
-
-    <main class="product-container" >
-        <h4>Recommandations </h4>
-    <div class="product-grid" id="recommandations">
-<div class="product-card sac">
-    <img src="IMG_E3032 (2).JPG"alt="sac">
-    <h4>sac</h4>
-    <p>15$</p>
-    <button onclick="ajouterPanier()"> Ajouter au panier</button>
-</div>
-<div class="product-card bijoux">
-   <img src="IMG_E3032 (2).JPG"alt="Bijoux">
-    <h4>sac</h4>
-    <p>15$</p>
-    <button onclick="ajouterPanier()"> Ajouter au panier</button>
-</div> 
-<div class="product-card vetements & Accessoires">
-   <img src="IMG_E3032 (2).JPG"alt="Vetements&Accessoires">
-    <h4>sac</h4>
-    <p>15$</p>
-    <button onclick="ajouterPanier()"> Ajouter au panier</button>
-    </div>
-    <div class="product-card Accessoires cheveux">
-   <img src="IMG_E3032 (2).JPG"alt="chouchou">
-    <h4>sac</h4>
-    <p>15$</p>
-    <button onclick="ajouterPanier()"> Ajouter au panier</button>
-    </div>
-    <div class="product-card produits de beaute">
-   <img src="IMG_E3032 (2).JPG"alt="crayon">
-    <h4>sac</h4>
-    <p>15$</p>
-    <button onclick="ajouterPanier()"> Ajouter au panier</button>
-    </div>
-    <div class="product-card chaussures">
-   <img src="IMG_E3032 (2).JPG"alt="chaussures">
-    <h4>sac</h4>
-    <p>15$</p>
-    <button onclick="ajouterPanier()"> Ajouter au panier</button>
-    </div>
-     <div class="product-card chaussures">
-   <img src="IMG_E3032 (2).JPG"alt="chaussures">
-    <h4>sac</h4>
-    <p>15$</p>
-    <button onclick="ajouterPanier()"> Ajouter au panier</button>
-    </div>
-     <div class="product-card chaussures">
-   <img src="IMG_E3032 (2).JPG"alt="chaussures">
-    <h4>sac</h4>
-    <p>15$</p>
-    <button onclick="ajouterPanier()"> Ajouter au panier</button>
-    </div>
-     <div class="product-card chaussures">
-   <img src="IMG_E3032 (2).JPG"alt="chaussures">
-    <h4>sac</h4>
-    <p>15$</p>
-    <button onclick="ajouterPanier()"> Ajouter au panier</button>
-    </div>
-     <div class="product-card chaussures">
-   <img src="IMG_E3032 (2).JPG"alt="chaussures">
-    <h4>sac</h4>
-    <p>15$</p>
-    <button onclick="ajouterPanier()"> Ajouter au panier</button>
-    </div>
-     <div class="product-card chaussures">
-   <img src="IMG_E3032 (2).JPG"alt="chaussures">
-    <h4>sac</h4>
-    <p>15$</p>
-    <button onclick="ajouterPanier()"> Ajouter au panier</button>
-    </div>
-     <div class="product-card chaussures">
-   <img src="IMG_E3032 (2).JPG"alt="chaussures">
-    <h4>sac</h4>
-    <p>15$</p>
-    <button onclick="ajouterPanier()"> Ajouter au panier</button>
-    </div>
-     <div class="product-card chaussures">
-   <img src="IMG_E3032 (2).JPG"alt="chaussures">
-    <h4>sac</h4>
-    <p>15$</p>
-    <button onclick="ajouterPanier()"> Ajouter au panier</button>
-    </div>
-     <div class="product-card chaussures">
-   <img src="IMG_E3032 (2).JPG"alt="chaussures">
-    <h4>sac</h4>
-    <p>15$</p>
-    <button onclick="ajouterPanier()"> Ajouter au panier</button>
-    </div>
-     <div class="product-card chaussures">
-   <img src="IMG_E3032 (2).JPG"alt="chaussures">
-    <h4>sac</h4>
-    <p>15$</p>
-    <button onclick="ajouterPanier()"> Ajouter au panier</button>
-    </div>
-    <div class="product-card chaussures">
-   <img src="IMG_E3032 (2).JPG"alt="chaussures">
-    <h4>sac</h4>
-    <p>15$</p>
-    <button onclick="ajouterPanier()"> Ajouter au panier</button>
-    </div>
-     <div class="product-card chaussures">
-   <img src="IMG_E3032 (2).JPG"alt="chaussures">
-    <h4>sac</h4>
-    <p>15$</p>
-    <button onclick="ajouterPanier()"> Ajouter au panier</button>
-    </div>
-     <div class="product-card chaussures">
-   <img src="IMG_E3032 (2).JPG"alt="chaussures">
-    <h4>sac</h4>
-    <p>15$</p>
-    <button onclick="ajouterPanier()"> Ajouter au panier</button>
-    </div>
-     <div class="product-card chaussures">
-   <img src="IMG_E3032 (2).JPG"alt="chaussures">
-    <h4>sac</h4>
-    <p>15$</p>
-    <button onclick="ajouterPanier()"> Ajouter au panier</button>
-    </div>
-     <div class="product-card chaussures">
-   <img src="IMG_E3032 (2).JPG"alt="chaussures">
-    <h4>sac</h4>
-    <p>15$</p>
-    <button onclick="ajouterPanier()"> Ajouter au panier</button>
-    </div>
-     <div class="product-card chaussures">
-   <img src="IMG_E3032 (2).JPG"alt="chaussures">
-    <h4>sac</h4>
-    <p>15$</p>
-    <button onclick="ajouterPanier()"> Ajouter au panier</button>
-    </div>
-     <div class="product-card chaussures">
-   <img src="IMG_E3032 (2).JPG"alt="chaussures">
-    <h4>sac</h4>
-    <p>15$</p>
-    <button onclick="ajouterPanier()"> Ajouter au panier</button>
-    </div>
-     <div class="product-card chaussures">
-   <img src="IMG_E3032 (2).JPG"alt="chaussures">
-    <h4>sac</h4>
-    <p>15$</p>
-    <button onclick="ajouterPanier()"> Ajouter au panier</button>
-    </div>
-     <div class="product-card chaussures">
-   <img src="IMG_E3032 (2).JPG"alt="chaussures">
-    <h4>sac</h4>
-    <p>15$</p>
-    <button onclick="ajouterPanier()"> Ajouter au panier</button>
-    </div>
-     <div class="product-card chaussures">
-   <img src="IMG_E3032 (2).JPG"alt="chaussures">
-    <h4>sac</h4>
-    <p>15$</p>
-    <button onclick="ajouterPanier()"> Ajouter au panier</button>
-    </div>
-     <div class="product-card chaussures">
-   <img src="IMG_E3032 (2).JPG"alt="chaussures">
-    <h4>sac</h4>
-    <p>15$</p>
-    <button onclick="ajouterPanier()"> Ajouter au panier</button>
-    </div>
-     <div class="product-card chaussures">
-   <img src="IMG_E3032 (2).JPG"alt="chaussures">
-    <h4>sac</h4>
-    <p>15$</p>
-    <button onclick="ajouterPanier()"> Ajouter au panier</button>
-    </div>
-      <div class="product-card chaussures">
-   <img src="IMG_E3032 (2).JPG"alt="chaussures">
-    <h4>sac</h4>
-    <p>15$</p>
-    <button onclick="ajouterPanier()"> Ajouter au panier</button>
-    </div>
-      <div class="product-card chaussures">
-   <img src="IMG_E3032 (2).JPG"alt="chaussures">
-    <h4>sac</h4>
-    <p>15$</p>
-    <button onclick="ajouterPanier()"> Ajouter au panier</button>
-    </div>
-      <div class="product-card chaussures">
-   <img src="IMG_E3032 (2).JPG"alt="chaussures">
-    <h4>sac</h4>
-    <p>15$</p>
-    <button onclick="ajouterPanier()"> Ajouter au panier</button>
-    </div>
-</section>
-        </main>
+    <main class="categories-content"> 
+      <section id="sacs"class="category-section">
+        <h2>sacs</h2>
+        <div class="product-grid">
+          <div class="product-card">
+            <img src="images_vorah/sac (2).JPG"alt="sac1">
+            <h4>sac</h4>
+            <P>10$</P>
+          </div>
+          <div class="product-card">
+            <img src="images_vorah/sac (2).JPG"alt="sac1">
+            <h4>sac</h4>
+            <P>10$</P>
         </div>
-    <script src="js.script.js"></script>
+<div class="product-card">
+            <img src="images_vorah/sac (2).JPG"alt="sac1">
+            <h4>sac</h4>
+            <P>10$</P>
+        </div>
+        <div class="product-card"> 
+            <img src="images_vorah/sac (2).JPG"alt="sac1">
+            <h4>sac</h4>
+            <P>10$</P>
+        </div>
+        <div class="product-card">
+            <img src="images_vorah/sac (2).JPG"alt="sac1">
+            <h4>sac</h4>
+            <P>10$</P>
+        </div>
+        <div class="product-card">
+            <img src="images_vorah/sac (2).JPG"alt="sac1">
+            <h4>sac</h4>
+            <P>10$</P>
+        </div>
+    <div class="product-card">
+            <img src="images_vorah/sac (2).JPG"alt="sac1">
+            <h4>sac</h4>
+            <P>10$</P>
+        </div>
+        <div class="product-card">
+            <img src="images_vorah/sac (2).JPG"alt="sac1">
+            <h4>sac</h4>
+            <P>10$</P>
+        </div>
+        <div class="product-card">
+            <img src="images_vorah/sac (2).JPG"alt="sac1">
+            <h4>sac</h4>
+            <P>10$</P>
+        </div>
+        <div class="product-card">
+            <img src="images_vorah/sac (2).JPG"alt="sac1">
+            <h4>sac</h4>
+            <P>10$</P>
+        </div>
+</section>
+<section id="bijoux"class="category-section">
+  <h2>Bijoux</h2>
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="images_vorah/Bijoux.JPG"alt="Bijoux">
+      <h4>Bijoux</h4>
+      <p>5$</p>
+    </div>
+    <div class="product-card">
+      <img src="images_vorah/Bijoux.JPG"alt="Bijoux">
+      <h4>Bijoux</h4>
+      <p>5$</p>
+    </div>
+    <div class="product-card">
+      <img src="images_vorah/Bijoux.JPG"alt="Bijoux">
+      <h4>Bijoux</h4>
+      <p>5$</p>
+    </div>
+    <div class="product-card">
+      <img src="images_vorah/Bijoux.JPG"alt="Bijoux">
+      <h4>Bijoux</h4>
+      <p>5$</p>
+    </div>
+    <div class="product-card">
+      <img src="images_vorah/Bijoux.JPG"alt="Bijoux">
+      <h4>Bijoux</h4>
+      <p>5$</p>
+    </div>
+    <div class="product-card">
+      <img src="images_vorah/Bijoux.JPG"alt="Bijoux">
+      <h4>Bijoux</h4>
+      <p>5$</p>
+    </div>
+    <div class="product-card">
+      <img src="images_vorah/Bijoux.JPG"alt="Bijoux">
+      <h4>Bijoux</h4>
+      <p>5$</p>
+    </div>
+    <div class="product-card">
+      <img src="images_vorah/Bijoux.JPG"alt="Bijoux">
+      <h4>Bijoux</h4>
+      <p>5$</p>
+    </div>
+    <div class="product-card">
+      <img src="images_vorah/Bijoux.JPG"alt="Bijoux">
+      <h4>Bijoux</h4>
+      <p>5$</p>
+    </div>
+    <div class="product-card">
+      <img src="images_vorah/Bijoux.JPG"alt="Bijoux">
+      <h4>Bijoux</h4>
+      <p>5$</p>
+    </div>
+  </section>
+    <section id="Vetements"class="category-section">
+  <h2>robes</h2>
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="images_vorah/robex.JPG"alt="robes">
+      <h4>robe</h4>
+      <p>10$</p>
+    </div>
+    <div class="product-card">
+      <img src="images_vorah/robex.JPG"alt="robes">
+      <h4>robe</h4>
+      <p>10$</p>
+    </div>
+    <div class="product-card">
+      <img src="images_vorah/robex.JPG"alt="robes">
+      <h4>robe</h4>
+      <p>10$</p>
+    </div>
+    <div class="product-card">
+      <img src="images_vorah/robex.JPG"alt="robes">
+      <h4>robe</h4>
+      <p>10$</p>
+    </div>
+    <div class="product-card">
+      <img src="images_vorah/robex.JPG"alt="robes">
+      <h4>robe</h4>
+      <p>10$</p>
+    </div>
+    <div class="product-card">
+      <img src="images_vorah/robex.JPG"alt="robes">
+      <h4>robe</h4>
+      <p>10$</p>
+    </div>
+    <div class="product-card">
+      <img src="images_vorah/robex.JPG"alt="robes">
+      <h4>robe</h4>
+      <p>10$</p>
+    </div>
+    <div class="product-card">
+      <img src="images_vorah/robex.JPG"alt="robes">
+      <h4>robe</h4>
+      <p>10$</p>
+    </div>
+<div class="product-card">
+      <img src="images_vorah/robex.JPG"alt="robes">
+      <h4>robe</h4>
+      <p>10$</p>
+    </div>
+    <div class="product-card">
+      <img src="images_vorah/robex.JPG"alt="robes">
+      <h4>robe</h4>
+      <p>10$</p>
+    </div>
+  </section>
+  <section id="autres articles"class="Autres articles">
+    <h2>Autres article</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="images_vorah/paccessoires (2).JPG"alt="crème">
+        <h4>crèmes visage</h4>
+        <p>12$</p>
+      </div>
+       <div class="product-card">
+        <img src="images_vorah/paccessoires (2).JPG"alt="crème">
+        <h4>crèmes visage</h4>
+        <p>12$</p>
+      </div>
+       <div class="product-card">
+        <img src="images_vorah/paccessoires (2).JPG"alt="crème">
+        <h4>crèmes visage</h4>
+        <p>12$</p>
+      </div>
+       <div class="product-card">
+        <img src="images_vorah/paccessoires (2).JPG"alt="crème">
+        <h4>crèmes visage</h4>
+        <p>12$</p>
+      </div>
+       <div class="product-card">
+        <img src="images_vorah/paccessoires (2).JPG"alt="crème">
+        <h4>crèmes visage</h4>
+        <p>12$</p>
+      </div>
+       <div class="product-card">
+        <img src="images_vorah/paccessoires (2).JPG"alt="crème">
+        <h4>crèmes visage</h4>
+        <p>12$</p>
+      </div>
+       <div class="product-card">
+        <img src="images_vorah/paccessoires (2).JPG"alt="crème">
+        <h4>crèmes visage</h4>
+        <p>12$</p>
+      </div>
+       <div class="product-card">
+        <img src="images_vorah/paccessoires (2).JPG"alt="crème">
+        <h4>crèmes visage</h4>
+        <p>12$</p>
+      </div>
+       <div class="product-card">
+        <img src="images_vorah/paccessoires (2).JPG"alt="crème">
+        <h4>crèmes visage</h4>
+        <p>12$</p>
+      </div>
+       <div class="product-card">
+        <img src="images_vorah/paccessoires (2).JPG"alt="crème">
+        <h4>crèmes visage</h4>
+        <p>12$</p>
+      </div>
+    </div>
+  </section>
+    </main>
+       </div>
     </body>
 </html>
         

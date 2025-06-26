@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta  charset="UTF-8">
+        <meta name="viewport"content="width=device-width, initial-scale=1.0">
+        <title>vorah-catégories</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
+    <body>
+        <header class="header">
+        <nav class="navbar">
+        <div class="logo">vorah</div>
+            <ul class="nav-links">
+         <li><a href="index.html">Accueil</a></li>
+            <li><a href="categories.html">catégories</a></li>
+                <li><a href="panier.html">panier</a></li>
+                <li><a href="moncompte.html"> Moncompte</a></li>
+                <li class="search-mobile">
+        </ul>
+        </nav>
+        </header>
+        <main class="compte-container">
+            <h1>
+                <div class="tabs">
+                    <button class="tab-button active" onclick="showTab('infos')">Informations</button>
+                    <button class="tab-button"onclick="showTab('commandes')">Commandes</button>
+                    <button class="tab-button"onclick="showTab('adresse')">Adresse</button>
+                    <button class="tab-button"onclick="showTab('logout')">Déconnexion</button>
+                </div>
+                <div id="infos"class="tab-content active">
+                    <h2>Informations personnelles</h2>
+                    <form>
+                        <label>Nom complet:</label>
+                        <input type="text" placeholder="Entrez votre nom">
+                        <label>Email:</label>
+                        <input type="email"placeholder="Entrez votre email">
+                        <label>Téléphone:</label>
+                        <input type="tel" placeholder="Ex: +243...">
+                        <button type="submit">Mettre à jour</button>
+                        </form>
+                </div>
+                <div id="commandes" class="tab-content">
+                    <h2> Historistique des commandes</h2>
+                    <P>Vous n'avez encore passé la commande aucune commande.</P>
+                </div>
+                <div id="adresse"class="tab-content">
+                    <h2>Adresse enregistrée</h2>
+                    <p>Aucune adresse enregistrée.</p>
+                </div>
+                <div id="logout"class="tab-content">
+                    <h2>Déconnexion</h2>
+                    <button class="logout-button">Se déconnecter</button>
+                </div>
+            </main>
+            <script>
+    function showTab(tabId) {
+        const buttons=document.querySelectorAll('.tab-button');
+        const contents=document.querySelectorAll('.tab-content');
+
+        buttons.forEach(btn => btn.classList.remove('active'));
+        contents.forEach(content =>content.classList.remove('active'));
+        
+        document.getElementById(tabId).classList.add('active');
+        event.target.classList.add('active');
+console.log("script chargé!");
+        
+    }
+    </script>
+    
+    </body>
+</html>
+
+

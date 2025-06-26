@@ -223,61 +223,34 @@ nav ul li a:hover{
 
 .categories-page{
     display: flex;
-    
 }
-.categories-menu{
+
+.container{
+    display: flex;
+}
+.side-menu{
     width: 200px;
-    background-color: white;
-    padding: 10px;
-    border-right: 1px solid #ccc ;
+    background-color: #f2f2f2;
+    position: sticky;
+    top:0;
+    height: 100vh;
 }
-.categories-menu  ul{
+.side-menu ul{
     list-style: none;
     padding: 0;
 }
-.categories-menu li{
-    margin: 10px 0;
-    cursor: pointer;
-    color: #444;
-    border-bottom: 1px solid #ccc;
+.side-menu li{
+    margin-bottom:10px ;
 }
-.categories-menu li:hover{
-    background-color: #333;
-}
-.product-container {
-    flex: 1;
-    padding: 20px;
-}
-.section-title{
-    margin-top: 20px;
-    color: #222;
+.side-menu a{ 
+    text-decoration: none;
+    color:#333;
+    font-size: bold;
 }
 .product-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
-    
-}
-.product-card{
-    background-color: white;
-    padding: 15px;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0,0, 0, 0.1);
-    
-}
-.product-card img{
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 6px;
-}
-.product-card h4{
-    margin: 10px 0 5px;
-}
-.product-card p{
-    color: green;
-    font-weight: bold;
 }
 .panier-container{
     display: flex;
@@ -288,18 +261,21 @@ nav ul li a:hover{
 .panier-liste{
     flex: 2;
 }
+
 .panier-item{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    overflow: hidden;
     justify-content: space-between;
     align-items: center;
     border: 1px solid #ddd;
     padding: 15px;
-    margin-bottom:15px ;
+    margin-bottom:1px ;
     border-radius: 8px;
 }
 .panier-item img{
-    width: 100%;
-    height: 250px;
+    width: 45%;
+    height: 100px;
     object-fit: cover;
     border-radius: 6px;
 }
@@ -307,4 +283,60 @@ nav ul li a:hover{
     flex: 1;
     padding-left: 20px;
 }
+.panier-resume{
+    flex: 1;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    height: fit-content;
+}
+.panier-resume button{
+    padding: 10px 20px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.compte-container{
+    margin: 900px;
+    margin: 60px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.1);
+}.compte-container h1{
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 30px;
+    color:#333;
+}
+.tabs{
+    display: flex;
+    gap:10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+.tab-button{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: #eee;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
 
+.tab-button.active{
+    background-color: #ff6600;
+    color:white;
+}
+.tab-button:hover{
+    background-color: #ffa94d;
+}
+.tab-content{
+    display: none;
+}
+.tab-content.tab-button.active{
+    display: block;
+}
